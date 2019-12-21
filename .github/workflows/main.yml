@@ -23,6 +23,7 @@ jobs:
       - name: Build
         run: |
           cd src
+          npm i
           npm run build:production
           cd ..
           HUGO_ENV="production" hugo --minify
