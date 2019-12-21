@@ -1,0 +1,7 @@
+baseURL = "https://zarva.me/"
+languageCode = "en-us"
+title = "Test Title"
+enableRobotsTXT = true
+
+[params]
+  favicon = ""
