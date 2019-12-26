@@ -43,5 +43,5 @@ jobs:
         run: |
           IMAGE_VERSION=$(echo "${{ github.sha }}" | cut -c 1-12)
           SERVICE_NAME=zarva_me_zarva_me
-          IMAGE_NAME=zarva_me
+          IMAGE_NAME=zarva.me
           curl "http://zarva.me:9999/service/update?serviceName=$SERVICE_NAME&imageName=$IMAGE_NAME&imageVersion=$IMAGE_VERSION&token=${{ secrets.updaterToken }}" -v -f
