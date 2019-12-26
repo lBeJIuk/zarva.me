@@ -5,7 +5,7 @@ on:
       - master
 
 jobs:
-  build-and-deploy:
+  buildAndPublish:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
