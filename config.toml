@@ -3,19 +3,20 @@ languageCode = "en-us"
 title = "Test Title"
 enableRobotsTXT = true
 defaultContentLanguage = "en"
+disableLanguages = ["de", "ru"]
 
 [languages]
   [languages.en]
-    title = "My blog"
+    title = "zarva.me"
     weight = 1
   [languages.de]
-    title = "Mein Blog"
+    title = "zarva.me"
     weight = 2
     [languages.de.params]
       [languages.de.params.navigation]
         help = "Hilfe"
   [languages.ru]
-    title = "Мой блог"
+    title = "zarva.me"
     weight = 3
     [languages.ru.params]
       [languages.ru.params.navigation]

@@ -41,6 +41,35 @@ body {
   transition: background-color 0.5s ease-out;
 }
 
+#themeToggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 0;
+  margin: 10px;
+  background-color: var(--secondary-color);
+  /*background-image: linear-gradient(*/
+  /*  180deg,*/
+  /*  var(--primary-color) 0%,*/
+  /*  var(--primary-color) 23%,*/
+  /*  var(--secondary-color) 23%,*/
+  /*  var(--secondary-color) 26%,*/
+  /*  var(--primary-color) 26%,*/
+  /*  var(--primary-color) 48%,*/
+  /*  var(--secondary-color) 48%,*/
+  /*  var(--secondary-color) 51%,*/
+  /*  var(--primary-color) 51%,*/
+  /*  var(--primary-color) 73%,*/
+  /*  var(--secondary-color) 73%,*/
+  /*  var(--secondary-color) 76%,*/
+  /*  var(--primary-color) 76%*/
+  /*);*/
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border: 1px solid var(--secondary-color);
+}
+
 /* for-phone-only */
 @media (max-width: 599px) {
 }

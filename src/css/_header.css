@@ -7,8 +7,16 @@ header {
   text-align: center;
 }
 
+.header__name {
+  margin-bottom: 0;
+}
+
+.translations a {
+  color: var(--secondary-color);
+}
+
 .header__spec {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .contact__list {
