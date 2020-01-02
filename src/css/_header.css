@@ -16,16 +16,22 @@ header {
   margin: 0;
   padding: 0;
 }
+.contact__list a {
+  color: var(--secondary-color);
+}
 
 .contact__list .list__item {
   margin: 0;
   padding: 10px 0;
   border-bottom: 2px solid var(--secondary-color);
+  display: flex;
+  align-items: center;
 }
 
-.contact__list .list__item > img {
+.contact__list .list__item img {
   width: 15px;
   height: 15px;
+  margin-right: 5px;
 }
 
 /* for-phone-only */

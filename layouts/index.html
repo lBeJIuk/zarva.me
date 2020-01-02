@@ -1,23 +1,28 @@
 {{ define "main" }}
-<div>
-  <div class="photo-wrapper">
-    <img/>
-  </div>
-  <div class="aboutme">
-    <h3 class="aboutme__title">{{ i18n "aboutMe" }}</h3>
-    {{ i18n "aboutMeText" }}
-    <div class="aboutme__mainSkills">
-      <ul class="mainSkills__list">
-        {{ range $.Site.Data.skills }}
-          <li class="list__item">
-            <img src="{{ .src }}" alt="{{ .alt }}">
-          </li>
-        {{ end }}
-      </ul>
+  <div>
+    <div class="photo-wrapper">
+      <img alt="Photo" src="/dist/img/photo.jpg"/>
+    </div>
+    <div class="aboutme">
+      <h2 class="aboutme__title">{{ i18n "aboutMe" }}</h2>
+      <div class="aboutme__short">
+        {{ i18n "aboutMeText" | markdownify }}
+      </div>
+      <div class="aboutme__mainSkills">
+        <ul class="mainSkills__list">
+          {{ range $.Site.Data.skills }}
+            <li class="list__item">
+              <img src="{{ .src }}" alt="{{ .alt }}">
+            </li>
+          {{ end }}
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 
-  {{ block "tabs" . }}{{ partial "site-tabs.html" .}}{{ end }}
+  <div class="main-information">
+    <h2 class="main-information__title">{{ i18n "mainInformation" }}</h2>
+    {{ block "tabs" . }}{{ partial "site-tabs.html" .}}{{ end }}
+  </div>
 
 {{ end }}

@@ -36,6 +36,7 @@ body {
   margin: 0 auto;
   font-family: "Roboto Slab", sans-serif;
   background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 /* for-phone-only */

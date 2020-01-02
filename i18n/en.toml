@@ -7,7 +7,10 @@ other = "28329, Bremen, Deutschland"
 other = "About me"
 
 [aboutMeText]
-other = "For several years I have been developing and supporting web applications. I have experience in developing web, mobile and server applications."
+other = "For several years I have been developing and supporting web applications. I have experience in developing web, mobile and server applications. \n\n Here's a list of the technologies I work with every day:"
+
+[mainInformation]
+other = "Main Information"
 
 [cv]
 other = "cv"
@@ -27,17 +30,24 @@ other = "Powered by"
 [socialLinks]
 other = "Social links"
 
-[callbackEmail]
-other = "Email for callback"
-
 [callbackMotivation]
 other = "If you have any questions, you can leave your contacts and the question below. I'll be sure to contact you."
+
+[callbackEmail]
+other = "Email for callback:"
+
+[callbackEmailPlaceHolder]
+other = "Please enter your email"
+
+[message]
+other = "Message:"
+
+[messagePlaceHolder]
+other = "Please enter your message"
 
 [callbackps]
 other = "ps*: If you have any comments or suggestions for improvement of this site, the source code is on the [Github](https://github.com/lBeJIuk/zarva.me)."
 
-[message]
-other = "Message"
 
 [send]
 other = "Send"

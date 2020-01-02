@@ -1,3 +1,10 @@
+.main-information__title {
+  padding: 15px 0;
+  margin: 10px 0 0 0;
+  border-bottom: 2px solid var(--secondary-color);
+  text-align: center;
+}
+
 .tabs {
   margin: 0;
   padding: 10px 0 15px 0;
@@ -37,6 +44,18 @@
 .tabs-content__item {
   display: none;
   opacity: 0;
+  text-align: justify;
+}
+.tabs-content__item p {
+  padding: 0;
+  margin: 0 10px;
+}
+.tabs-content__item a {
+  color: var(--secondary-color);
+}
+.tabs-content__item img {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .tabs-content__item.tabs-content__item--active {
@@ -51,13 +70,28 @@
   margin-top: 10px;
 }
 
+.tabs-content__item.tabs-content__item--callback-form .callback-form input,
+.tabs-content__item.tabs-content__item--callback-form .callback-form textarea {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.tabs-content__item.tabs-content__item--callback-form #callbackEmail {
+  height: 30px;
+  font-size: 16px;
+  padding: 0 10px 0 10px;
+}
+
 .tabs-content__item.tabs-content__item--callback-form textarea {
   resize: none;
-  height: 30vh;
+  height: 200px;
+  font-size: 16px;
 }
 
 .tabs-content__item.tabs-content__item--callback-form .callback-form__submit {
   padding: 0;
   margin: 0;
   background-color: transparent;
+  height: 30px;
+  font-size: 16px;
+  border: 2px solid var(--secondary-color);
 }

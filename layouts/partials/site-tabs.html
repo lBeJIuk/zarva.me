@@ -18,14 +18,14 @@
         <label for="callbackEmail">
           {{ i18n "callbackEmail" }}
         </label>
-          <input id="callbackEmail" type="email" name="email">
+          <input id="callbackEmail" type="email" name="email" placeholder="{{ i18n "callbackEmailPlaceHolder" }}">
         <label for="message">
           {{ i18n "message" }}
         </label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" required placeholder="{{ i18n "messagePlaceHolder" }}"></textarea>
         <input class="callback-form__submit" type="submit" value="{{ i18n "send"}}"/>
       </form>
-      <p>{{ i18n "callbackps" | markdownify }}</p>
+      <small>{{ i18n "callbackps" | markdownify }}</small>
     </div>
   </div>
 

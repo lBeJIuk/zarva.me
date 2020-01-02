@@ -3,22 +3,22 @@
     Serhii Zarva
   </h1>
   <h2 class="header__spec">
-    {{ i18n "developer" }}
+    <{{ i18n "developer" }}>
   </h2>
 </div>
 <div class="header__contacts">
   <ul class="contact__list">
-    <li class="list__item list__item--phone">
+    <li class="list__item">
       <img src="dist/img/call-answer.svg" alt="phone" />
-      +380935137879
+      <a href="tel:+380935137879">+380935137879</a>
     </li>
     <li class="list__item">
       <img src="dist/img/envelope.svg" alt="email" />
-      info@zarva.me
+      <a href="mailto:info@zarva.me">info@zarva.me</a>
     </li>
     <li class="list__item">
     <img src="dist/img/geo.svg" alt="geo" />
-      {{ i18n "addresse" }}
+      <a target="_blank" href="https://www.google.com/maps/place/28329+Bremen/@53.0786836,8.8159362,12z/data=!3m1!4b1!4m5!3m4!1s0x47b1279fda3f56ab:0x1c26cf7aaa3bd5e0!8m2!3d53.0780512!4d8.8827645">{{ i18n "addresse" }}</a>
     </li>
   </ul>
 </div>
