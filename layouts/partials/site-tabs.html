@@ -1,0 +1,31 @@
+<div class="tabs-wrapper">
+  <ul class="tabs">
+    {{ $data := index .Site.Data .Site.Language.Lang }}
+    {{ range $index, $tab :=  $data.tabs }}
+      <li class="tabs__item {{ if eq 0 $index }} tabs__item--active {{ end }}">{{ $tab.name }}</li>
+    {{ end }}
+    <li class="tabs__item">{{ i18n "callback"}}</li>
+  </ul>
+
+  <div class="tabs-content">
+    {{ range $index, $tab :=  $data.tabs }}
+      <div class="tabs-content__item {{ if eq 0 $index }} tabs-content__item--active {{ end }}">{{ $tab.content | markdownify}}</div>
+    {{ end }}
+
+    <div class="tabs-content__item tabs-content__item--callback-form">
+      <form class="callback-form">
+        <label for="callbackEmail">
+          {{ i18n "callbackEmail" }}
+        </label>
+          <input id="callbackEmail" type="email" name="email">
+        <label for="message">
+          {{ i18n "message" }}
+        </label>
+        <textarea id="message" name="message" required></textarea>
+        <input class="callback-form__submit" type="submit" value="{{ i18n "send"}}"/>
+      </form>
+    </div>
+  </div>
+
+</div>
+

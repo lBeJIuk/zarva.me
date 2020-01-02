@@ -2,6 +2,26 @@ baseURL = "https://zarva.me/"
 languageCode = "en-us"
 title = "Test Title"
 enableRobotsTXT = true
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    title = "My blog"
+    weight = 1
+  [languages.de]
+    title = "Mein Blog"
+    weight = 2
+    [languages.de.params]
+      [languages.de.params.navigation]
+        help = "Hilfe"
+  [languages.ru]
+    title = "Мой блог"
+    weight = 3
+    [languages.ru.params]
+      [languages.ru.params.navigation]
+        help = "Помощь"
+
 
 [params]
   favicon = ""
+  help = "help"

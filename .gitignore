@@ -1,4 +1,4 @@
 static
 src/node_modules/*
-data
+data/webpack_assets.json
 public

@@ -1,0 +1,19 @@
+<footer>
+  <div class="socialLinks__wrapper">
+    <h3>{{ i18n "socialLinks" }}</h3>
+    <ul class="socialLinks__list">
+      {{ range $.Site.Data.socialLinks }}
+      <li class="list__item">
+        <a href="{{ .href }}">
+          <img src="{{ .imgSrc }}" alt="{{ .name }}">
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="copyrights">
+    <small>&copy; lBeJIuk {{ now.Format "2006"}}</small>
+    <small>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small>
+    <small>{{ i18n "poweredBy" }}: <a href="http://gohugo.io">Hugo</a></small>
+  </div>
+</footer>

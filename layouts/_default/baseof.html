@@ -39,5 +39,14 @@
       {{ block "main" . }}{{ end }}
     </main>
 
+  <footer>
+    {{ block "footer" . }}{{ partial "site-footer.html" .}}{{ end }}
+  </footer>
+
   </body>
+  {{ $assets := .Site.Data.webpack_assets.app }}
+    {{ with $assets.js }}
+    <script src="{{ relURL (printf "%s%s" "dist/" .) }}" ></script>
+  {{ end }}
+
 </html>

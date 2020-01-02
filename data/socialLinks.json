@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Twitter",
+    "href": "https://twitter.com/lBeJIuk",
+    "imgSrc": "dist/img/twitter-black.svg"
+  },
+  {
+    "name": "GitHub",
+    "href": "https://github.com/lBeJIuk",
+    "imgSrc": "dist/img/github-black.svg"
+  },
+  {
+    "name": "Linkedin",
+    "href": "https://www.linkedin.com/in/sergey-zarva-92799713b/",
+    "imgSrc": "dist/img/linkedin-black.svg"
+  },
+  {
+    "name": "Facebook",
+    "href": "https://www.facebook.com/profile.php?id=100001527737530",
+    "imgSrc": "dist/img/facebook-black.svg"
+  }
+]

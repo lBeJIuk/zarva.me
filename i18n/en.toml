@@ -1,0 +1,32 @@
+[aboutMe]
+other = "About me"
+
+[aboutMeText]
+other = "For several years I have been developing and supporting web applications. I have experience in developing web, mobile and server applications."
+
+[cv]
+other = "cv"
+
+[projects]
+other = "Projects"
+
+[callback]
+other = "Callback"
+
+[images]
+other = "Images"
+
+[poweredBy]
+other = "Powered by"
+
+[socialLinks]
+other = "Social links"
+
+[callbackEmail]
+other = "Email for callback"
+
+[message]
+other = "Message"
+
+[send]
+other = "Send"

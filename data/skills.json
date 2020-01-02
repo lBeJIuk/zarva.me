@@ -1,0 +1,26 @@
+[
+  {
+    "alt": "javascript",
+    "src": "dist/img/js-black.svg"
+  },
+  {
+    "alt": "php",
+    "src": "dist/img/php-black.svg"
+  },
+  {
+    "alt": "html",
+    "src": "dist/img/html-black.svg"
+  },
+  {
+    "alt": "sql",
+    "src": "dist/img/sql-black.svg"
+  },
+  {
+    "alt": "docker",
+    "src": "dist/img/docker.svg"
+  },
+  {
+    "alt": "golang",
+    "src": "dist/img/go-lang.svg"
+  }
+]

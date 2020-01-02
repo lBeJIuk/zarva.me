@@ -1,6 +1,5 @@
 header {
   display: flex;
-  width: 100vw;
   flex-direction: column;
 }
 
@@ -18,12 +17,16 @@ header {
   padding: 0;
 }
 
-.list__item {
+.contact__list .list__item {
   margin: 0;
   padding: 10px 0;
-  border-bottom: 2px solid #2f2f2f;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
+.contact__list .list__item > img {
+  width: 15px;
+  height: 15px;
+}
 
 /* for-phone-only */
 @media (max-width: 599px) {
@@ -45,15 +48,12 @@ header {
 
 /* for-tablet-landscape-up */
 @media (min-width: 900px) {
-
 }
 
 /* for-desktop-up */
 @media (min-width: 1200px) {
-
 }
 
 /* for-big-desktop-up */
 @media (min-width: 1800px) {
-
 }

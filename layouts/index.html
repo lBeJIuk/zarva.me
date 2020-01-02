@@ -1,20 +1,23 @@
 {{ define "main" }}
 <div>
-  short disc label
-  <div>
-    my Foto
+  <div class="photo-wrapper">
+    <img/>
   </div>
-  <div>
-    Short About me
-  </div>
-  <div>
-    Icons
-    Icons
+  <div class="aboutme">
+    <h3 class="aboutme__title">{{ i18n "aboutMe" }}</h3>
+    {{ i18n "aboutMeText" }}
+    <div class="aboutme__mainSkills">
+      <ul class="mainSkills__list">
+        {{ range $.Site.Data.skills }}
+          <li class="list__item">
+            <img src="{{ .src }}" alt="{{ .alt }}">
+          </li>
+        {{ end }}
+      </ul>
+    </div>
   </div>
 </div>
-<ul>
-  <li>cv</li>
-  <li>project</li>
-  <li>Callback</li>
-</ul>
+
+  {{ block "tabs" . }}{{ partial "site-tabs.html" .}}{{ end }}
+
 {{ end }}
