@@ -39,6 +39,11 @@ module.exports = {
         from: "fonts/*",
         to: path.join(__dirname, "../static/dist"),
         cache: true
+      },
+      {
+        from: "site.webmanifest",
+        to: path.join(__dirname, "../static/dist/site.webmanifest"),
+        cache: true
       }
     ])
   ],

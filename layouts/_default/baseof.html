@@ -16,6 +16,7 @@
     {{ block "favicon" . }}
       {{ partialCached "site-favicon.html" . }}
     {{ end }}
+    <link rel="manifest" href="/dist/site.webmanifest">
 
     {{ $stylesheet := .Site.Data.webpack_assets.app }}
     {{ with $stylesheet.css }}
