@@ -1,3 +1,8 @@
+[developer]
+other = "Developer"
+[addresse]
+other = "28329, Bremen, Deutschland"
+
 [aboutMe]
 other = "About me"
 
@@ -24,6 +29,12 @@ other = "Social links"
 
 [callbackEmail]
 other = "Email for callback"
+
+[callbackMotivation]
+other = "If you have any questions, you can leave your contacts and the question below. I'll be sure to contact you."
+
+[callbackps]
+other = "ps*: If you have any comments or suggestions for improvement of this site, the source code is on the [Github](https://github.com/lBeJIuk/zarva.me)."
 
 [message]
 other = "Message"

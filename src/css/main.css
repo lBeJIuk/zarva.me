@@ -7,13 +7,34 @@
   --primary-color: #fff;
   --secondary-color: #2f2f2f;
 }
+/* roboto-slab-regular - latin_cyrillic */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("/dist/fonts/roboto-slab-v10-latin_cyrillic-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/dist/fonts/roboto-slab-v10-latin_cyrillic-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-700 - latin_cyrillic */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("/dist/fonts/roboto-slab-v10-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/dist/fonts/roboto-slab-v10-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 body {
   width: 95%;
   margin: 0 auto;
-}
-
-body {
+  font-family: "Roboto Slab", sans-serif;
   background-color: var(--primary-color);
 }
 

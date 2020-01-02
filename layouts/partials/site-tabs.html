@@ -13,6 +13,7 @@
     {{ end }}
 
     <div class="tabs-content__item tabs-content__item--callback-form">
+      <p>{{ i18n "callbackMotivation" }}</p>
       <form class="callback-form">
         <label for="callbackEmail">
           {{ i18n "callbackEmail" }}
@@ -24,6 +25,7 @@
         <textarea id="message" name="message" required></textarea>
         <input class="callback-form__submit" type="submit" value="{{ i18n "send"}}"/>
       </form>
+      <p>{{ i18n "callbackps" | markdownify }}</p>
     </div>
   </div>
 

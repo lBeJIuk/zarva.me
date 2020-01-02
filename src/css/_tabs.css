@@ -1,9 +1,20 @@
 .tabs {
   margin: 0;
-  padding: 0;
+  padding: 10px 0 15px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
+}
+
+.tabs--sticky {
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-color) 0%,
+    var(--primary-color) 80%,
+    transparent
+  );
 }
 
 .tabs .tabs__item {
@@ -36,17 +47,16 @@
 
 .tabs-content__item.tabs-content__item--callback-form .callback-form {
   display: grid;
-  grid-template-columns: 2fr 4fr;
   grid-gap: 10px;
   margin-top: 10px;
 }
 
 .tabs-content__item.tabs-content__item--callback-form textarea {
   resize: none;
+  height: 30vh;
 }
 
 .tabs-content__item.tabs-content__item--callback-form .callback-form__submit {
-  grid-column: 1 / -1;
   padding: 0;
   margin: 0;
   background-color: transparent;

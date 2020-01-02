@@ -34,6 +34,11 @@ module.exports = {
         from: "img/*",
         to: path.join(__dirname, "../static/dist"),
         cache: true
+      },
+      {
+        from: "fonts/*",
+        to: path.join(__dirname, "../static/dist"),
+        cache: true
       }
     ])
   ],
