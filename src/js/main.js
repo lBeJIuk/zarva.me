@@ -27,7 +27,10 @@ const tabChangeHandler = (tabsController, tabsContent, index) => {
   tabsController[index].classList.add("tabs__item--active");
   tabsContent[index].classList.add("tabs-content__item--active");
 
-  if (tabsToolbar.classList.contains("tabs--sticky")) {
+  if (
+    tabsToolbar.classList.contains("tabs--sticky") &&
+    window.innerWidth < 1200
+  ) {
     window.scrollTo(0, tabsOffset);
   }
 };
