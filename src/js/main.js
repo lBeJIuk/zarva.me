@@ -1,5 +1,6 @@
 import styles from "./../css/main.css";
 
+let themeState = "light";
 const tabsController = document.querySelectorAll(".tabs .tabs__item");
 const tabsContent = document.querySelectorAll(
   ".tabs-content .tabs-content__item"
@@ -13,6 +14,7 @@ const options = {
   rootMargin: "0px",
   threshold: 1.0
 };
+const themeToggle = document.querySelector("#themeToggle");
 
 const tabChangeHandler = (tabsController, tabsContent, index) => {
   // clear state
@@ -51,3 +53,17 @@ const observer = new IntersectionObserver(entries => {
   });
 }, options);
 observer.observe(tabsToolbar);
+
+themeToggle.addEventListener("click", function() {
+  if (themeState === "light") {
+    document.documentElement.style.setProperty("--primary-color", "#2f2f2f");
+    document.documentElement.style.setProperty("--secondary-color", "#fff");
+    document.documentElement.style.setProperty("--svg-invert", 1);
+    themeState = "dark";
+  } else {
+    document.documentElement.style.setProperty("--primary-color", "#fff");
+    document.documentElement.style.setProperty("--secondary-color", "#2f2f2f");
+    document.documentElement.style.setProperty("--svg-invert", 0);
+    themeState = "light";
+  }
+});

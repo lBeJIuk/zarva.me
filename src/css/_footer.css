@@ -24,6 +24,7 @@
 .socialLinks__list .list__item img {
   height: 50px;
   width: 50px;
+  filter: invert(var(--svg-invert));
 }
 
 .copyrights {

@@ -28,12 +28,25 @@ header {
   align-items: center;
 }
 
-.contact__list .list__item img {
+.contact__list .list__item svg {
   width: 15px;
   height: 15px;
   margin-right: 5px;
+  background-size: contain;
 }
 
+.contact__list .list__item.list__item--phone path {
+  fill: var(--secondary-color);
+}
+
+.contact__list .list__item--mail path {
+  fill: var(--secondary-color);
+}
+.contact__list .list__item--geo path {
+  fill: var(--secondary-color);
+}
+
+.contact__list .list__item--phone .imageContainer
 /* for-phone-only */
 @media (max-width: 599px) {
 }

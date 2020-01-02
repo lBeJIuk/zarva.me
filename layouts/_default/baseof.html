@@ -34,6 +34,9 @@
     <header>
       {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     </header>
+    <aside>
+      <button id="themeToggle">Toggle</button>
+    </aside>
 
     <main>
       {{ block "main" . }}{{ end }}

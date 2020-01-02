@@ -54,4 +54,5 @@
 .mainSkills__list .list__item > img {
   width: 50px;
   height: 50px;
+  filter: invert(var(--svg-invert));
 }

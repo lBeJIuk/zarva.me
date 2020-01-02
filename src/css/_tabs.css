@@ -28,13 +28,13 @@
   padding: 10px;
   margin: 0;
   list-style: none;
-  border: 1px solid black;
+  border: 1px solid var(--secondary-color);
   cursor: pointer;
   transition: box-shadow 0.15s ease-out;
 }
 
 .tabs .tabs__item:hover {
-  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 3px var(--secondary-color);
 }
 
 .tabs .tabs__item.tabs__item--active {
@@ -79,6 +79,8 @@
   height: 30px;
   font-size: 16px;
   padding: 10px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .tabs-content__item.tabs-content__item--callback-form textarea {
@@ -86,6 +88,8 @@
   height: 200px;
   font-size: 16px;
   padding: 10px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .tabs-content__item.tabs-content__item--callback-form .callback-form__submit {
@@ -95,4 +99,5 @@
   height: 40px;
   font-size: 16px;
   border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
