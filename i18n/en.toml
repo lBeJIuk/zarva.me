@@ -2,7 +2,7 @@
 other = "Developer"
 
 [addresse]
-other = "28329, Bremen, Deutschland"
+other = "28329, Bremen, Germany"
 
 [aboutMe]
 other = "About me"
@@ -51,6 +51,12 @@ other = "ps: If you have any comments or suggestions for improvement of this sit
 
 [send]
 other = "Send"
+
+[iconsMadeBy]
+other = "Icons made by"
+
+[from]
+other = "from"
 
 [loading]
 other = "Loading..."

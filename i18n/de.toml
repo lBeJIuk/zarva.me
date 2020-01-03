@@ -1,3 +1,63 @@
+[developer]
+other = "Entwickler"
+
+[addresse]
+other = "28329, Bremen, Deutschland"
+
 [aboutMe]
 other = "Über mich"
 
+[aboutMeText]
+other = "Seit mehreren Jahren entwickle und betreue ich Webanwendungen. Ich habe Erfahrung in der Entwicklung von Web-, Mobil- und Serveranwendungen. \n\n Hier ist eine Liste der Technologien, mit denen ich täglich arbeite:"
+
+[mainInformation]
+other = "Haupt Information"
+
+[cv]
+other = "Lebenslauf"
+
+[projects]
+other = "Prejekte"
+
+[callback]
+other = "Kontaktformular"
+
+[images]
+other = "Bilder"
+
+[poweredBy]
+other = "Powered by"
+
+[socialLinks]
+other = "Soziale Verbindungen"
+
+[callbackMotivation]
+other = "Wenn Sie Fragen haben, können Sie Ihre Kontakte und die Frage unten hinterlassen. Ich werde mich dann mit Ihnen in Verbindung setzen."
+
+[callbackEmail]
+other = "Email für Rückruf:"
+
+[callbackEmailPlaceHolder]
+other = "Bitte geben Sie Ihre E-Mail-Adresse ein"
+
+[message]
+other = "Nachricht:"
+
+[messagePlaceHolder]
+other = "Bitte geben Sie Ihre Nachricht ein"
+
+[callbackps]
+other = "ps: Wenn Sie Kommentare oder Verbesserungsvorschläge zu dieser Seite haben, finden Sie den Quellcode auf der [Github](https://github.com/lBeJIuk/zarva.me)."
+
+[send]
+other = "Schicken"
+
+[iconsMadeBy]
+other = "Icons hergestellt von"
+
+[from]
+other = "von"
+
+
+[loading]
+other = "Laden..."

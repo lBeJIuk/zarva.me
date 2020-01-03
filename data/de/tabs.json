@@ -1,10 +1,10 @@
 [
   {
-    "name": "qwe",
-    "content": "1"
+    "name": "cv",
+    "content": "## Erfahrung\n***\n#### __ePhilos AG__\n\n##### *Anwendungsentwickler* \n\n _08/2017 - Jetzt_\n\nIch bin für die Entwicklung von E-Procurement-Lösungen verantwortlich. Die Hauptrichtungen der Arbeit: Entwicklung der Benutzeroberfläche, Entwicklung eines Serverteils der Anwendung, Design und Arbeit mit einer Datenbank.\n\n#### __Oschadbank__\n\n##### *Support-Ingenieur*\n\n_07/2013 - 02/2017_\n\nIch habe in der IT-Supportabteilung der Bank gearbeitet. Zu meinen Aufgaben gehörten: Einrichten von Computern, Computernetzwerken und Netzwerkgeräten, Einrichten und Warten von Geldautomaten.\n\n## Bildung\n***\n#### Fachinformatiker - Anwendungsentwicklung\n\nEuropaschule Schulzentrum SII Utbremen\n\n_08/2017 - jetzt_\n\n#### Spezialist für Computersysteme und Netzwerke\nNationale Technische Universität von Winnytca\n\n_10/2012 - 04/2014_\n\n#### Master in Funktechnik\nNationale Technische Universität von Winnytca\n\n_09/2012 - 11/2013_\n\n#### Bachelor in Funktechnik\nNationale Technische Universität von Winnytca\n\n_09/2008 - 07/2012_"
   },
   {
-    "name": "sad",
-    "content": "yxc"
+    "name": "projects",
+    "content": "## [zarva.pp.ua](https://zarva.pp.ua)\n\n![zarva.pp.ua_screenshot](/dist/img/zarva.pp.ua.jpg \"zarva.pp.ua screenshot\")\n\nMein erstes Wordpress-Projekt. Dieses Projekt dient dazu, mich mit den Konzepten der Wordpress vertraut zu machen. In diesem Blog habe ich versucht, kleine Artikel ins Russische zu übersetzen.\nDabei wurden folgende Technologien eingesetzt:\n- HTML/CSS/JS/PHP\n- Wordpress\n- Docker\n\n## [book.themarkz](https://book.themarkz.com)\n\n![book.themarkz_screenshot](/dist/img/book.theMarkz.com.jpg \"book.themarkz.com screenshot\")\nDieses Projekt wurde für die Verwaltung von Lesezeichen gemacht, da das Drittprodukt, das ich vorher benutzt habe, anfing, mir zu missfallen.\nDabei wurden folgende Technologien eingesetzt:\n- ReactJS\n- MaterialUI\n- MongoDB\n- Nodejs\n- Gin-Gonic\n- Docker\n\n## [zarva.me](https://zarva.me)\n\n![zarva.me_screenshot](/dist/img/zarva.me.jpg \"zarva.me screenshot\")\nEigentlich diese Web-Seite, die als eine Visitenkarte gemacht wurde, und auch für die Bekanntschaft mit den Prinzipien der Arbeit der statischen Generatoren der Web-Seiten.\nDabei wurden folgende Technologien eingesetzt:\n- Hugo\n- CSS-Grid\n- Webpack\n- Docker"
   }
 ]

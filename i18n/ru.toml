@@ -1,3 +1,63 @@
-[aboutMe]
-other = "Коротко обо мне"
+[developer]
+other = "Разработчик"
 
+[addresse]
+other = "28329, Бремен, Германия"
+
+[aboutMe]
+other = "Обо мне"
+
+[aboutMeText]
+other = "На протяжении нескольких лет я разрабатываю и поддерживаю веб-приложения. Я имею опыт в разработке веб-, мобильных- и серверных приложений. \n\n Вот список технологий с которыми я работаю каждый день"
+
+[mainInformation]
+other = "Главная информация"
+
+[cv]
+other = "Резюме"
+
+[projects]
+other = "Проэкты"
+
+[callback]
+other = "Контактный формуляр"
+
+[images]
+other = "Картинки"
+
+[poweredBy]
+other = "Создано с помощью"
+
+[socialLinks]
+other = "Ссылки на социальные сети"
+
+[callbackMotivation]
+other = "Если у вас есть вопросы - можете оставить их в контактном формуляре ниже. Я обязательно свяжусь с вами"
+
+[callbackEmail]
+other = "Электронная почта, для обратной связи:"
+
+[callbackEmailPlaceHolder]
+other = "Введите адресс электронной почты"
+
+[message]
+other = "Сообщение:"
+
+[messagePlaceHolder]
+other = "Введите сообщение"
+
+[callbackps]
+other = "ps: Если у вас есть замечания или предложение по даному сайту - исходные коды можно найти на [Github](https://github.com/lBeJIuk/zarva.me)."
+
+[send]
+other = "Отослать"
+
+[iconsMadeBy]
+other = "Иконки сделаны"
+
+[from]
+other = "с"
+
+
+[loading]
+other = "Загрузка..."

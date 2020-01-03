@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Test Title"
 enableRobotsTXT = true
 defaultContentLanguage = "en"
-disableLanguages = ["de", "ru"]
 
 [languages]
   [languages.en]
