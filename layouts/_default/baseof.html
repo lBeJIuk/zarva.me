@@ -48,6 +48,8 @@
       {{ block "footer" . }}{{ partial "site-footer.html" .}}{{ end }}
     </footer>
 
+  <div class="messageOverlay"><p class="messageOverlay__content">{{ i18n "loading" }}</p></div>
+
   </body>
   {{ $assets := .Site.Data.webpack_assets.app }}
     {{ with $assets.js }}

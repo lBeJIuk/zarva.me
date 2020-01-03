@@ -49,6 +49,8 @@ other = "Please enter your message"
 [callbackps]
 other = "ps: If you have any comments or suggestions for improvement of this site, the source code is on the [Github](https://github.com/lBeJIuk/zarva.me)."
 
-
 [send]
 other = "Send"
+
+[loading]
+other = "Loading..."

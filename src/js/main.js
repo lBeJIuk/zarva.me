@@ -15,7 +15,6 @@ const options = {
   threshold: 1.0
 };
 const themeToggle = document.querySelector("#themeToggle");
-
 const tabChangeHandler = (tabsController, tabsContent, index) => {
   // clear state
   tabsController.forEach(item => {
@@ -36,13 +35,6 @@ const tabChangeHandler = (tabsController, tabsContent, index) => {
     window.scrollTo(0, tabsOffset);
   }
 };
-
-tabsController.forEach((tab, index) => {
-  tab.addEventListener("click", () => {
-    tabChangeHandler(tabsController, tabsContent, index);
-  });
-});
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.boundingClientRect.top <= 0) {
@@ -52,8 +44,23 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 }, options);
+const callbackEmail = document.querySelector("#callbackEmail");
+const callbackMessage = document.querySelector("#message");
+const submit = document.querySelector(".callback-form__submit");
+const callbackForm = document.querySelector(".callback-form");
+const messageOverlay = document.querySelector(".messageOverlay");
+
+// Tabs change
+tabsController.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabChangeHandler(tabsController, tabsContent, index);
+  });
+});
+
+// Tabs sticky
 observer.observe(tabsToolbar);
 
+// Theme switch
 themeToggle.addEventListener("click", function() {
   if (themeState === "light") {
     document.documentElement.style.setProperty("--primary-color", "#2f2f2f");
@@ -67,3 +74,39 @@ themeToggle.addEventListener("click", function() {
     themeState = "light";
   }
 });
+
+// Send message
+submit.addEventListener("click", function(e) {
+  e.preventDefault();
+  if (callbackForm.checkValidity()) {
+    const email = callbackEmail.value;
+    const message = callbackMessage.value;
+    messageOverlay.classList.add("messageOverlay--visible");
+    sendDataToFirebase(email, message).then(value => {
+      callbackEmail.value = "";
+      callbackMessage.value = "";
+      messageOverlay.classList.remove("messageOverlay--visible");
+    });
+  }
+});
+function sendDataToFirebase(email, message) {
+  return fetch(
+    "https://firestore.googleapis.com/v1/projects/zarva-me/databases/(default)/documents/messages?alt=json",
+    {
+      method: "post",
+      body: JSON.stringify({
+        fields: {
+          email: {
+            stringValue: email
+          },
+          message: {
+            stringValue: message
+          },
+          timestamp: {
+            stringValue: new Date()
+          }
+        }
+      })
+    }
+  );
+}
